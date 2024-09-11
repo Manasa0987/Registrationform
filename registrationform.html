@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Registration form for job application</title>
+<link rel="icon" href="joblogo.jpeg">
+<style>
+
+
+
+div{
+margin:auto;
+width:600px;
+border-radius:15px;
+box-shadow:0 0 15px black;
+padding:50px;
+line-height:3;
+
+}
+span{
+color:red;
+fontsize:20px;}
+
+</style>
+<body>
+
+<h1 align="center"><strong>Registration form</strong></h1>
+<div>
+<form action="Registration.html">
+<table>
+<tr><td><label for="fna">Enter fisrt name</label><span>*</span></td>
+<td><input type="text" id="fna" required></td></tr>
+
+<tr><td><label for="mna">Enter middle name</label></td>
+<td><input type="text" id="mna"></td></tr>
+
+
+<tr><td><label for="lna">Enter last name</label><span>*</span></td>
+<td><input type="text" id="lna" required></td></tr>
+
+<tr><td><label for="em">Enter valid email</label><span>*</span></td>
+<td><input type="email" id="em" required></td></tr>
+
+<tr><td><label for="ph">Enter phone number</label><span>*</span></td>
+<td><input type="text" id="ph" required></td></tr>
+
+<tr><td><label for="dob" >Enter date of birth</label><span>*</span></td>
+<td><input type="date" id="dob" min="1995-01-01" max="2024-01-01" required></td></tr>
+
+<tr>
+<td><label for="gen">Gender</label><span>*</span></td>
+<td><input type="radio" value="f" name="gen" required>
+<label>Female</label>&nbsp;
+<input type="radio" value="m" name="gen">
+<label>Male</label>&nbsp;
+<input type="radio" value="o" name="gen">
+<label>Others</label></td></tr>
+
+<tr><td><label for="cn">Enter college name</label><span>*</span></td>
+<td><input type="text" id="cn" required></td></tr>
+
+<tr><td><label for="coursen">Which course?</label><span>*<span></td>
+<td><select id="coursen" name="coursen" required>
+<option value="">select course</option>
+<option value="CSE">computer science and engineering</option>
+<option value="ECE">electronics and communication engineering</option>
+<option value="EEE">electrical and electronics engineering</option>
+<option value="chem">chemical engineering</option>
+<option value="mech">mechanical engineering</option>
+<option value="IT">information technology</option>
+<option value="civil">civil engineering</option>
+</select></td></tr>
+
+<tr><td><label for="yop">Year of passing</label><span>*<span></td>
+<td><input type="date" id="yop" required></td></tr>
+
+<tr><td><label for="exp">How many years of experience do you have in the IT sector</label><span>*</span></td>
+<td><input type="number" id="exp" name="exp" min="0" max="5" size="30" required></td></tr>
+
+<tr><td><label for="rolen">Which role do you want</label><span>*</span></td>
+<td><select id="rolen" name="rolen" required>
+<option value="">select role</option>
+<option value="SCP">Senior computer programmer</option>
+<option value="UXD">UX designer</option>
+<option value="PM">Product manager</option>
+<option value="NE">Network engineer</option>
+<option value="FED">Front-end developer</option>
+<option value="FSD">Full stack developer</option>
+<option value="SSE">Senior system engineer</option>
+<option value="DA">Data analyst</option>
+<option value="DS">Data sacinece</option>
+<option value="MD">Mobile developer</option>
+</select></td></tr>
+
+<tr><td><label for="idproof">Select any id proof</option><span>*<span></td>
+<td><select id="idproof" name="idproof" required>
+<option value="">select</option>
+<option value="Aadhar">Aadhar card</option>
+<option value="Pan card">Pan card</option>
+<option value="collegeid">College id card</option>
+</select>
+<input type="file" id="idproof"></td></tr>
+
+<tr><td><label for="upr">Upload resume</label><span>*</span><br></td>
+<td><input type="file" id="upr" required></td></tr></table>
+
+<input type="checkbox" id="tandc" name="tandc" required>
+<label for="tandc">I accept all the terms and conditions</label></p>
+<p align="center">
+<button type="submit" > Register Now</button>
+</form>
+</div>
+
+</body>
+</html>
+
+
+
